@@ -2,6 +2,13 @@
 
 This artifact accompanies the paper **“Opal: An Operator Algebra View for RLHF (with the GKPO Interchange Schema)”**.
 
+We present Opal, an operator view of reinforcement learning from human feedback (RLHF).
+Objectives are expressed as ladders of two primitives on a base utility: additive penalties
+and multiplicative pairwise weights. We show a simple reduction law with if-and-only-if conditions:
+such ladders collapse to a normal form on pairwise margins when the reference is fixed, penalties are additive,
+and weights are independent of intermediate margins. When these assumptions do not hold (reference shift,
+non-additive gates, score-dependent weights), finite examples witness non-reducibility.
+
 ## Contents
 - `gkpo.py`: GKPO schema, canonicalization, deterministic `opal_hash`, reducibility flags.
 - `adapters/`: tiny adapters for DPO and RRHF.
