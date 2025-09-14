@@ -32,3 +32,10 @@ PYTHONPATH=. python stress/score_demo.py
 python equivalence_demo.py examples/dpo_min.json examples/rrhf_min.json
 python equivalence_demo.py examples/dpo_min.json examples/pporm_min.json --show-diff
 ```
+---
+
+## 📜 License
+
+Released under the MIT License.
+
+---
