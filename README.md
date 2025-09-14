@@ -19,9 +19,9 @@ python gkpo.py --from-json examples/dpo_min.json
 python gkpo.py --from-json examples/rrhf_min.json
 python gkpo.py --from-json examples/pporm_min.json
 python gkpo.py --check examples/*.json
-python stress/shift_demo.py
-python stress/gate_demo.py
-python stress/score_demo.py
-python equivalence_demo.py opal_gkpo_artifact/examples/dpo_min.json opal_gkpo_artifact/examples/rrhf_min.json
-python equivalence_demo.py opal_gkpo_artifact/examples/dpo_min.json opal_gkpo_artifact/examples/pporm_min.json --show-diff
+PYTHONPATH=. python stress/shift_demo.py
+PYTHONPATH=. python stress/gate_demo.py
+PYTHONPATH=. python stress/score_demo.py
+python equivalence_demo.py examples/dpo_min.json examples/rrhf_min.json
+python equivalence_demo.py examples/dpo_min.json examples/pporm_min.json --show-diff
 ```
