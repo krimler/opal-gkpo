@@ -1,0 +1,43 @@
+{
+  "version": "gkpo-1.0",
+  "score": {
+    "type": "logpi"
+  },
+  "weight": {
+    "form": "constant",
+    "constant": 1.0
+  },
+  "reference": {
+    "form": "fixed_zero",
+    "value": 0.0
+  },
+  "link": "identity",
+  "loss": "logistic",
+  "beta": 1.0,
+  "penalties": [
+    {
+      "name": "rank_margin_1",
+      "lambda": 0.5
+    },
+    {
+      "name": "rank_margin_2",
+      "lambda": 0.1
+    }
+  ],
+  "dataset_ops": {
+    "group_weights": [],
+    "group_penalties": [],
+    "composition": "dataset_then_policy"
+  },
+  "provenance": {
+    "method": "RRHF",
+    "citations": [
+      "yuan2023rrhf"
+    ]
+  },
+  "reducibility": {
+    "inside_R": true,
+    "reasons": [],
+    "witness": {}
+  }
+}

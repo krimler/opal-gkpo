@@ -1,0 +1,39 @@
+{
+  "version": "gkpo-1.0",
+  "score": {
+    "type": "logpi"
+  },
+  "weight": {
+    "form": "constant",
+    "constant": 1.0
+  },
+  "reference": {
+    "form": "per_prompt"
+  },
+  "link": "identity",
+  "loss": "logistic",
+  "beta": 1.0,
+  "penalties": [],
+  "dataset_ops": {
+    "group_weights": [],
+    "group_penalties": [],
+    "composition": "dataset_then_policy"
+  },
+  "provenance": {
+    "method": "ORPO-variant",
+    "citations": [
+      "yang2023orpo"
+    ]
+  },
+  "reducibility": {
+    "inside_R": false,
+    "reasons": [
+      "reference_shift"
+    ],
+    "witness": {
+      "raw_gap": 0.3,
+      "delta_ref_prompt1": 0.4,
+      "delta_ref_prompt2": -0.1
+    }
+  }
+}

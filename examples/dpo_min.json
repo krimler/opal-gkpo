@@ -1,0 +1,34 @@
+{
+  "version": "gkpo-1.0",
+  "score": {
+    "type": "logpi"
+  },
+  "weight": {
+    "form": "constant",
+    "constant": 1.0
+  },
+  "reference": {
+    "form": "fixed_scalar",
+    "value": 0.1
+  },
+  "link": "identity",
+  "loss": "logistic",
+  "beta": 1.0,
+  "penalties": [],
+  "dataset_ops": {
+    "group_weights": [],
+    "group_penalties": [],
+    "composition": "dataset_then_policy"
+  },
+  "provenance": {
+    "method": "DPO",
+    "citations": [
+      "rafailov2023direct"
+    ]
+  },
+  "reducibility": {
+    "inside_R": true,
+    "reasons": [],
+    "witness": {}
+  }
+}
