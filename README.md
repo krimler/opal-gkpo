@@ -1,6 +1,6 @@
 # Opal & GKPO (artifact)
 
-This artifact accompanies the paper **“Opal: An Operator Algebra for RLHF (with the GKPO Interchange Schema)”**.
+This artifact accompanies the paper **“Opal: An Operator Algebra View for RLHF (with the GKPO Interchange Schema)”**.
 
 ## Contents
 - `gkpo.py`: GKPO schema, canonicalization, deterministic `opal_hash`, reducibility flags.
